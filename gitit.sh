@@ -6,6 +6,10 @@
 # diese Parameter ist für den Schalter -m 
 # Beispiel:
 # 	./gitit.sh File_counter
+# ToDo:
+#   Spaces in messages
+#.
+
 git add *
 git commit -m $1
 git push
