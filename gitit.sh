@@ -8,7 +8,8 @@
 # 	./gitit.sh File_counter
 # ToDo:
 #   Spaces in messages
-#.
+# zum aktualisierung von gelöschte lokale Dateien ist eine message notwendig, wird aber nicht gesetz
+# also, etwas dummy nutzen.
 
 git add *
 git commit -am $1
