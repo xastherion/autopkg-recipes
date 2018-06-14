@@ -41,7 +41,7 @@ combination is offered.</string>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>.recipe.download.Iridium</string>
+	<string>com.github.xastherion.munki.Iridium</string>
 	<key>Process</key>
 	<array>
 		<dict>
