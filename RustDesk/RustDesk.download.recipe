@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<recipe>
+    <identifier>com.github.rustdesk.download</identifier>
+    <description>Downloads the latest RustDesk application.</description>
+    <minimum_version>0.5.0</minimum_version>
+    <input>
+        <KEY>NAME</KEY>
+        <VALUE>RustDesk</VALUE>
+        <KEY>GITHUB_REPO</KEY>
+        <VALUE>rustdesk/rustdesk</VALUE>
+    </input>
+    <process>
+        <dict>
+            <key>Processor</key>
+            <string>GitHubReleasesInfoProvider</string>
+            <key>Arguments</key>
+            <dict>
+                <key>github_repo</key>
+                <string>%GITHUB_REPO%</string>
+                <key>include_prereleases</key>
+                <false/>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>%release_download_url%</string>
+                <key>filename</key>
+                <string>%NAME%.dmg</string>
+            </dict>
+        </dict>
+    </process>
+</recipe>
+
