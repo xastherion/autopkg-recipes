@@ -11,18 +11,17 @@
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>%NAME%</string>
+		<string>apps/%NAME%</string>
 		<key>NAME</key>
 		<string>RustDesk</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
 			<array>
-				<string>testing<?xml version="1.0" ?>
-</string>
+				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>An open-source remote desktop, and alternative to TeamViewer.</string>
+			<string>An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.</string>
 			<key>developer</key>
 			<string>zhou huabing</string>
 			<key>display_name</key>
